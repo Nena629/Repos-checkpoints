@@ -1,0 +1,36 @@
+ALGORITHM PHRASE
+
+var 
+
+Sentence : String
+i:=0, word_nbr:=0, v_nbr:= 0, char_nbr:=0 : INTEGER
+
+BEGIN
+
+READ(Sentence)
+
+FOR i FROM 0 to Sentence.length -1 STEP 1 DO
+
+if(Sentence[i] <> ' ' ) THEN 
+char_nbr := char_nbr +1 
+END_IF
+
+if(sentence[i] = ' ') THEN 
+word_nbr := word_nbr +1
+END_IF
+
+if(sentence[i] = 'a' or 'i' or 'u' or 'y' or 'o' or 'e') THEN 
+v_nbr = v_nbr +1
+END_IF
+
+END_FOR
+
+write('The number of char is :' , char_nbr)
+write('The number of words is :', word_nbr+1)
+write('the number of vowels is :' ,  v-nbr)
+
+
+
+END_FOR
+
+END
