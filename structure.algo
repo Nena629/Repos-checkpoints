@@ -1,0 +1,39 @@
+ALGORITHM DISTINCT 
+
+VAR
+
+arr1: ARRAY_OF INTEGER[5]
+arr2 : ARRAY_OF INTEGER[4]
+i:=0, j=0, sum:=0 : INTEGER
+Found := false : Boolean 
+
+BEGIN
+
+arr1 := {5,12,45,7,10}
+arr2 := {15,5,4,13,7}
+
+FOR i FROM 0 TO arr1.length step 1 DO
+  FOR j FROM 0 TO arr2.length step 1 DO
+   IF (arr1[i] = arr2[j]) THEN Found := true
+   break
+END_FOR
+   IF(Found = false) THEN sum := sum + arr1[i]
+END_FOR
+
+Found := false
+
+FOR i FROM 0 TO arr2.length step 1 DO
+  FOR j FROM 0 TO arr1.length step 1 DO
+   IF (arr2[i] = arr1[j]) THEN Found = true
+   break 
+END_FOR
+   IF(Found = false) THEN sum := sum + arr2[i]
+END_FOR
+
+Write ('The sum of Distinct elements is' + sum)     
+
+END
+
+
+
+
