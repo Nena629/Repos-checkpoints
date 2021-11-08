@@ -1,0 +1,15 @@
+PROCEDURE Dot_PRODUCT( v1, v2 : ARRAY_OF INTEGER[K])
+
+BEGIN
+
+v1 := []
+v2 := []
+
+FOR i FROM 0 to v1.length-1 STEP 1 DO
+
+sum = sum + (v1[i]*v2[i])
+
+END_FOR
+
+
+END
