@@ -1,15 +1,23 @@
-import './App.css';
-import  Image from './challenge/Image';
+import  React from 'react'
+import  ProfilPic from './Component/profil/ProfilPic';
+import  Name from './Component/profil/Name';
+import Adress from './Component/profil/Adress';
 
 
 
-function App() {
+class App extends React.Component {
+
+render (){
   return (
-    <div className="App">
-      <Image />
-
-    </div>
+    <>
+      <ProfilPic/>
+      <Name/>
+      <Adress/>
+      </>
+ 
   );
+}
+  
 }
 
 export default App;
