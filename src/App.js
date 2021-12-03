@@ -1,24 +1,35 @@
-import  React from 'react'
-import  ProfilPic from './Component/profil/ProfilPic';
-import  Name from './Component/profil/Name';
-import Adress from './Component/profil/Adress';
+import './App.css';
+import Profil from './Profil/Profil';
 
 
+const App = () => {
 
-class App extends React.Component {
+  const data = {
 
-render (){
-  return (
-    <>
-      <ProfilPic/>
-      <Name/>
-      <Adress/>
-      </>
- 
-  );
+    name: "Dave Harper ",
+    bio: "I am young space addicted",
+    profession: "Coder",
+    image: "https://i.pinimg.com/originals/11/df/2b/11df2bc889722dab6946142dc9c70151.gif",
+
+    warning: function () {
+
+      alert ('my name is' + this.name)
+
+    }
+  }
+
+    return (
+
+      <div className = "App">
+       
+      <Profil {...data}/>
+   
+     </div>
+   
+     ) ;
+    
 }
+
+
+  export default App;
   
-}
-
-export default App;
-
