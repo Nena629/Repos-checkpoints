@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.t{
+   background-image: url(/src/1dffd5ce57b68e80d4665e6b405fe0d4.jpg) ;
+   background-size:  1481px;
+   background-repeat: no-repeat;
+   height: 750px;
+
+  }
+
+
+
+h1{
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  color:black;
+
+}
+
+
+.search{
+    text-align: center;
+}
+

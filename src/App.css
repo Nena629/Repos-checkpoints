@@ -1,19 +1,5 @@
-* {
-  
-  background-image: url(./background.jpg);
+
+.hide{
+  display: none;
 }
-
-
-.App {
-  size: 100px;
-  color: whitesmoke;
-  text-align: center;
-  margin-top: 50px;
-}
-
-p{
-  font-size: 30px;
-  font-family: 'monopspace';
-}
-
 

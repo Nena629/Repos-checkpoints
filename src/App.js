@@ -1,35 +1,14 @@
-import './App.css';
-import Profil from './Profil/Profil';
+import "./App.css";
+import MovieList from "./Components/MovieList";
 
 
-const App = () => {
-
-  const data = {
-
-    name: "Dave Harper ",
-    bio: "I am young space addicted",
-    profession: "Coder",
-    image: "https://i.pinimg.com/originals/11/df/2b/11df2bc889722dab6946142dc9c70151.gif",
-
-    warning: function () {
-
-      alert ('my name is' + this.name)
-
-    }
-  }
+const App= () => {
 
     return (
-
-      <div className = "App">
-       
-      <Profil {...data}/>
-   
-     </div>
-   
-     ) ;
-    
+        <div className="App">
+            <MovieList />
+        </div>
+  );
 }
 
-
-  export default App;
-  
+export default App;

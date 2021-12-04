@@ -1,0 +1,23 @@
+.ro::after {
+    content: "";
+    clear: both;
+    display: table;
+  
+}
+
+.ro{
+    background-color: #FEF9E7  ;
+    margin-top: -40px;
+}
+
+
+.col{
+    float: left;
+    width: 31.33%;
+    padding: 0px;
+    margin-left: 27px;
+    background-color: #FEF9E7  ;
+   
+}
+
+
